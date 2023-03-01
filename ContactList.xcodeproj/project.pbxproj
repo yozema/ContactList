@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		9C22D5CB29AFEC99005C89DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C22D5CA29AFEC99005C89DB /* AppDelegate.swift */; };
 		9C22D5CD29AFEC99005C89DB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C22D5CC29AFEC99005C89DB /* SceneDelegate.swift */; };
-		9C22D5CF29AFEC99005C89DB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C22D5CE29AFEC99005C89DB /* ViewController.swift */; };
 		9C22D5D229AFEC99005C89DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C22D5D029AFEC99005C89DB /* Main.storyboard */; };
 		9C22D5D429AFEC9A005C89DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C22D5D329AFEC9A005C89DB /* Assets.xcassets */; };
 		9C22D5D729AFEC9A005C89DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C22D5D529AFEC9A005C89DB /* LaunchScreen.storyboard */; };
+		9CC1E5FA29AFF149005DAD46 /* PersonsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC1E5F929AFF149005DAD46 /* PersonsListViewController.swift */; };
+		9CC1E5FC29AFF169005DAD46 /* SectinoPersonsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC1E5FB29AFF169005DAD46 /* SectinoPersonsListViewController.swift */; };
+		9CC1E5FE29AFF725005DAD46 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC1E5FD29AFF725005DAD46 /* TabBarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9C22D5C729AFEC99005C89DB /* ContactList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContactList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C22D5CA29AFEC99005C89DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9C22D5CC29AFEC99005C89DB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9C22D5CE29AFEC99005C89DB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9C22D5D129AFEC99005C89DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9C22D5D329AFEC9A005C89DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9C22D5D629AFEC9A005C89DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9C22D5D829AFEC9A005C89DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9CC1E5F929AFF149005DAD46 /* PersonsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonsListViewController.swift; sourceTree = "<group>"; };
+		9CC1E5FB29AFF169005DAD46 /* SectinoPersonsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectinoPersonsListViewController.swift; sourceTree = "<group>"; };
+		9CC1E5FD29AFF725005DAD46 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +62,9 @@
 			children = (
 				9C22D5CA29AFEC99005C89DB /* AppDelegate.swift */,
 				9C22D5CC29AFEC99005C89DB /* SceneDelegate.swift */,
-				9C22D5CE29AFEC99005C89DB /* ViewController.swift */,
+				9CC1E5FD29AFF725005DAD46 /* TabBarViewController.swift */,
+				9CC1E5F929AFF149005DAD46 /* PersonsListViewController.swift */,
+				9CC1E5FB29AFF169005DAD46 /* SectinoPersonsListViewController.swift */,
 				9C22D5D029AFEC99005C89DB /* Main.storyboard */,
 				9C22D5D329AFEC9A005C89DB /* Assets.xcassets */,
 				9C22D5D529AFEC9A005C89DB /* LaunchScreen.storyboard */,
@@ -138,9 +144,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9C22D5CF29AFEC99005C89DB /* ViewController.swift in Sources */,
 				9C22D5CB29AFEC99005C89DB /* AppDelegate.swift in Sources */,
+				9CC1E5FA29AFF149005DAD46 /* PersonsListViewController.swift in Sources */,
 				9C22D5CD29AFEC99005C89DB /* SceneDelegate.swift in Sources */,
+				9CC1E5FE29AFF725005DAD46 /* TabBarViewController.swift in Sources */,
+				9CC1E5FC29AFF169005DAD46 /* SectinoPersonsListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
