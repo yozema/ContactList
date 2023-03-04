@@ -66,20 +66,60 @@
 		9C22D5C929AFEC99005C89DB /* ContactList */ = {
 			isa = PBXGroup;
 			children = (
+				9CC99DF429B39F06007CFF43 /* ViewControllers */,
+				9CC99DF329B39EDA007CFF43 /* Models */,
+				9CC99DF129B39E78007CFF43 /* StoryBoards */,
+				9CC99DF229B39E8B007CFF43 /* SupportingFiles */,
+				9CC99DF029B39E60007CFF43 /* Resources */,
+			);
+			path = ContactList;
+			sourceTree = "<group>";
+		};
+		9CC99DF029B39E60007CFF43 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9C22D5D329AFEC9A005C89DB /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9CC99DF129B39E78007CFF43 /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				9C22D5D029AFEC99005C89DB /* Main.storyboard */,
+				9C22D5D529AFEC9A005C89DB /* LaunchScreen.storyboard */,
+			);
+			path = StoryBoards;
+			sourceTree = "<group>";
+		};
+		9CC99DF229B39E8B007CFF43 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
 				9C22D5CA29AFEC99005C89DB /* AppDelegate.swift */,
 				9C22D5CC29AFEC99005C89DB /* SceneDelegate.swift */,
+				9C22D5D829AFEC9A005C89DB /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		9CC99DF329B39EDA007CFF43 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9CC1E60729B2A350005DAD46 /* DataStore.swift */,
+				9CC1E5FF29B132D1005DAD46 /* Person.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9CC99DF429B39F06007CFF43 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
 				9CC1E5FD29AFF725005DAD46 /* TabBarViewController.swift */,
 				9CC1E5F929AFF149005DAD46 /* PersonsListViewController.swift */,
 				9CC1E60129B1561D005DAD46 /* PersonalDetailsViewController.swift */,
 				9CC1E5FB29AFF169005DAD46 /* SectionPersonsListViewController.swift */,
-				9CC1E60729B2A350005DAD46 /* DataStore.swift */,
-				9CC1E5FF29B132D1005DAD46 /* Person.swift */,
-				9C22D5D029AFEC99005C89DB /* Main.storyboard */,
-				9C22D5D329AFEC9A005C89DB /* Assets.xcassets */,
-				9C22D5D529AFEC9A005C89DB /* LaunchScreen.storyboard */,
-				9C22D5D829AFEC9A005C89DB /* Info.plist */,
 			);
-			path = ContactList;
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -309,7 +349,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = G2WMS5YDNN;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ContactList/Info.plist;
+				INFOPLIST_FILE = ContactList/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -341,7 +381,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = G2WMS5YDNN;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ContactList/Info.plist;
+				INFOPLIST_FILE = ContactList/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
