@@ -18,8 +18,7 @@ class SectionPersonsListViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        let header = sectionPersons.map { $0.fullName}
-        return header[section]
+        return sectionPersons[section].fullName
         }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -28,10 +27,16 @@ class SectionPersonsListViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "credentials", for: indexPath)
-        var content = cell.defaultContentConfiguration()
         let person = sectionPersons[indexPath.section]
-        content.text = person.contactDetail.phoneNumber
-        cell.contentConfiguration = content
+        
+        switch indexPath.row {
+        case 0:
+            cell.textLabel?.text = person.phoneNumber
+            cell.imageView?.image = UIImage(systemName: "phone")
+        default:
+            cell.textLabel?.text = person.email
+            cell.imageView?.image = UIImage(systemName: "mail")
+        }
         
         return cell
     }
