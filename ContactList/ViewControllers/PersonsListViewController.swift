@@ -9,7 +9,7 @@ import UIKit
 
 final class PersonsListViewController: UITableViewController {
 
-    private let personsList = Person.getPerson()
+    var personsList: [Person] = []
     
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -25,6 +25,8 @@ extension PersonsListViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         personsList.count
     }
+    
+
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "person", for: indexPath)

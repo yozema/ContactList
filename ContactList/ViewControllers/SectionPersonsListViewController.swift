@@ -7,9 +7,9 @@
 
 import UIKit
 
-class SectionPersonsListViewController: UITableViewController {
+final class SectionPersonsListViewController: UITableViewController {
 
-    let sectionPersons = Person.getPerson()
+    var sectionPersons: [Person] = []
 
 // MARK: - UITableViewDataSource
 
@@ -18,8 +18,9 @@ class SectionPersonsListViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return sectionPersons[section].fullName
-        }
+        sectionPersons[section].fullName
+        
+    }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 2
@@ -28,16 +29,22 @@ class SectionPersonsListViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "credentials", for: indexPath)
         let person = sectionPersons[indexPath.section]
+        var content = cell.defaultContentConfiguration()
         
         switch indexPath.row {
         case 0:
-            cell.textLabel?.text = person.phoneNumber
-            cell.imageView?.image = UIImage(systemName: "phone")
+            content.text = person.phoneNumber
+            content.image = UIImage(systemName: "phone")
         default:
-            cell.textLabel?.text = person.email
-            cell.imageView?.image = UIImage(systemName: "mail")
+            content.text = person.email
+            content.image = UIImage(systemName: "mail")
         }
+        cell.contentConfiguration = content
         
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 }
